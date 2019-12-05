@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Promise</title>
+</head>
+<body>
+    
+<script>
+    // var promise= new Promise(function(resolve,rejected)
+    // {
+    //     setTimeout(function(){
+
+    //         resolve(true);
+    //     },1000)
+
+    // });
+    //  promise
+    //  .then(function(data){
+    //      console.log("resolved")
+    //      console.log(data)
+    //  })
+    //  .catch(function(error){
+    //     console.log("rej")
+    //  })
+    function mypromise(add){
+        return new Promise(function(resolve,reject){
+            setTimeout(function(){
+                var addition = 2019 + add;
+                if (add < 2000){
+                    resolve("in 20");
+
+                } else{
+                    reject("Approved")
+                }
+            },0);
+        });
+
+    }
+        mypromise(2000)
+        .then(function(result){
+            console.log("Resolved")
+            console.log(result)
+
+        })
+        .catch(function(result){
+            console.log("Rejected")
+            console.log(result)
+            
+        })
+       </script>
+</body>
+</html>
