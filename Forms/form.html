@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Using Forms </title>
+<style type="text/css">
+/*#name-2{
+padding: 0px 0px 0px 0px;
+margin:  0px 0px 0px 0px;
+}
+#number-1{
+padding: 9px 38px 2px 0px;
+margin:-11px 214px 0px 0px;
+}*/
+    /*padding: 0%;
+body{
+    margin: 0%;
+}*/
+body{
+    background-color: blue;
+}
+.form
+{
+    background-color: red;width: 50%;height: 650px;
+    float: left;
+
+}
+.table{
+    margin-left:5px;
+    height: 650px;
+    border: 1px solid;
+    width: 48%;    
+    float: left;
+    background-color: yellow;
+    border-collapse: collapse;
+}
+table,th,td{
+    border: 2px solid black;
+
+}
+.table>table
+{
+    width:98%;
+    
+}
+h{
+    "margin-top: 70px"
+}
+</style>
+</head>
+<body>
+
+<div class="form">
+
+    <form>
+    <label for="">Name</label>
+    <input type="text" placeholder="Enter name" id="nam" >
+
+    <label for="" style="margin-left: 150px">Age</label>
+
+    <input type="number" placeholder="Enter your age " id="age">
+
+
+    <br>
+    <br>
+
+    <h>Country <h>
+    <select name="country" style="margin-top: 70px" id="con"> Country
+    <option value="India">India</option>
+    <option value="Spain">Spain</option>
+    <option value="England">England</option>
+    <option value="Singapore">Singapore</option>
+    </select>
+
+    <label for="" style="margin-left: 70px" >State</label>
+
+    <select name="State" id="st">State
+    <option value="TN">Tamilnadu</option>
+    <option value="Kn">karnataka</option>
+    <option value="Ts">Telangana</option>
+        <option value="UP">uttarpradesh</option>
+
+    </select>
+
+    <label for="" style="margin-left: 170px">City</label>
+        <select name="city"id="city"> City
+        <option value="c">chennai</option>
+    <option value="b">bangalore</option>
+    <option value="k">kolkatta</option>
+    <option value="hy">hyderabad</option>
+    </select> <br>
+
+    <label for="" >gender
+    <input type="radio" style="margin-top: 70px" name="gender">male
+    <input type="radio" name="gender">female
+    </label>
+
+    <label for="" style="margin-left: 70px">Marital Status</label>
+    <input type="radio" name="ms">Married
+    <input type="radio" name="ms">Un Married
+    </label>
+    <br>
+
+    <label for="">skills </label>
+        <input type="checkbox" style="margin-left: 50px"  name="html">html
+    <input type="checkbox"   name="js">js
+    <input type="checkbox" name="python">python
+
+    </label>
+    <br>
+    <label for="" style="margin-top: 70px"> </label>
+    <h>  <margin-top:70> Tell about yourself </margin-top:70> </h><br>
+    <textarea rows="10" cols="40" ></textarea>
+
+    <br>
+    <input type="submit" placeholder="sh" onclick="spam(); return false">
+
+        
+
+        </form>
+    </div>
+
+<div class="table">
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Age
+                </th>
+                <th>
+                       Country
+                    </th>
+                    <th>
+                            State
+                        </th>
+                        <th>
+                                City
+                            </th>
+                            <th>
+                                    Marital Status
+                                </th>
+                                <th>
+                                        Skills
+                                    </th>
+                                    
+               
+            </tr>
+        </thead>
+        <tbody id="tbody">
+        
+        <tr>
+            <td>
+                Krish
+            </td>
+
+            <td>
+                21
+            </td>
+            <td>
+                    India
+                </td>
+            <td>
+                    Tamilnadu
+                </td>
+                <td>
+                        Chennai
+                    </td>
+                <td>
+                        Morattu Single
+                    </td>
+                    <td>
+                            Python
+                        </td>
+                        </tr>
+                            
+        </tbody>
+    </table>
+
+
+</div>
+<script src="formforeach.js">
+    </script>
+
+</body>
+</html>
