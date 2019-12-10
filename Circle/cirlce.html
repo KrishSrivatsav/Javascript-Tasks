@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+            <title>
+            Circle
+        </title>
+        <style>
+            .cir{
+                position:absolute;
+               margin-top:50px ;
+            }
+            .cir>img{
+                position:absolute;
+                height: 100px;
+                width: 150px;
+                margin-left: 500px;
+                margin-top: 100px;
+                border-radius: 50%; 
+                color: orangered;
+                background-color: red;
+            }
+            .u{
+                padding-bottom:10px;
+                margin-top: 250px;
+                margin-left: 525px;
+                
+            }
+            .all{
+                
+                margin-top: 50px;
+                margin-left: 410px;
+                margin-top: -1px;
+            }
+            .cir>p{
+                text-align:center;
+                margin-left: 400px;
+                color: darkgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+
+            <div class="cir">
+                <p id="demo">Click the button to change the text in this paragraph.</p>
+                <img id="control" src="./circle.png" alt="circle">
+                <div class="u">
+                    <button onclick="upbutt()" >Moving Up</button> 
+                </div>
+                <div class="all">
+                    <button onclick="downbutt()">Moving down</button>
+                
+                    <button onclick="leftbutt()"class="l">Moving left</button> 
+                               
+                    <button onclick="rightbutt()"class="r">Moving right</button>
+                </div>
+
+                
+
+
+            </div>
+        </div>
+        <script src="circle.js">
+        </script>
+    </body>
+</html>
